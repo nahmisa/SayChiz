@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <head>
+    <title>SayChiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+      <header>
+        SayChiz
+      </header>
+
+      <div class="main">
+        <img class="pic" src="default-placeholder.png"/>
+      </div>
+
+      <footer>
+          <img class="camera-icon" src="Reflex-Camera-Icon.png" />
+      </footer>
+
+      <input
+        type="file"
+        class="upload"
+        accept="image/*"
+        capture="camera"
+        onchange="readImage(this.files[0])">
+      </input>
+
+  </body>
+</html>
